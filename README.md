@@ -1,40 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Blog Post Application with Next.js
+
+This project is built using Next.js and TypeScript to display a list of blog posts and associated comments. The data is fetched from an external API using Server-Side Rendering (SSR). The project also implements error handling and tests using Jest and React Testing Library.
+
+## Table of Contents
+
+Installation
+Getting Started
+Running the Application
+Environment Variables
+Testing
+Project Structure
+
+## Installation
+
+git clone https://github.com/BajwaAhmed/blog-next-typescript
 
 ## Getting Started
 
-First, run the development server:
+npm install
 
-```bash
+## Running the Application
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Testing
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+npm run test
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Project Structure
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+.
+├── components/
+│ ├── comments/
+│ │ └── Comment.tsx # Component for rendering individual comments
+│ ├── layout/
+│ │ └── Layout.tsx # Layout component for the overall page structure
+│ └── posts/
+│ ├── PostDetail.tsx # Renders detailed view of a post with comments
+│ └── PostList.tsx # Displays the list of posts
+├── coverage/ # Folder for test coverage reports
+├── pages/
+│ ├── fonts/ # Font assets for the project
+│ ├── posts/
+│ │ └── [postId].tsx # Dynamic route page for post details
+│ ├── \_app.tsx # Global Next.js App component
+│ ├── \_document.tsx # Custom Document for SSR
+│ └── index.tsx # Main homepage displaying post list
+├── public/ # Static assets such as images and other public files
+├── services/
+│ └── postApi.ts # API functions for fetching posts and comments
+├── styledComponents/
+│ ├── CommentStyles.ts # Styled components for comments
+│ ├── Headings.ts # Styled components for headings
+│ ├── LayoutStyles.ts # Styled components for Layout
+│ ├── mixins.ts # Common mixins for styled components
+│ ├── PostDetailStyles.ts # Styled components for PostDetail
+│ └── PostListStyles.ts # Styled components for PostList
+├── styles/
+│ ├── globals.css # Global styles for the entire application
+├── tests/
+│ ├── PostDetail.test.tsx # Unit tests for PostDetail component
+│ └── PostList.test.tsx # Unit tests for PostList component
+├── themes/
+│ └── theme.ts # Theme configuration for the project
+├── types/
+│ ├── comments.ts # Type definitions for comments
+│ └── post.ts # Type definitions for posts
+├── .env.local # Environment variables for the project
+├── .eslintrc.json # ESLint configuration
+├── jest.config.js # Jest configuration for running tests
+├── setupTests.ts # Setup file for testing environment
+├── tsconfig.json # TypeScript configuration
+└── README.md # Project documentation
