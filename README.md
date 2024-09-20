@@ -32,43 +32,43 @@ npm run test
 .
 ├── components/
 │ ├── comments/
-│ │ └── Comment.tsx # Component for rendering individual comments
+│ │ └── Comment.tsx 
 │ ├── layout/
-│ │ └── Layout.tsx # Layout component for the overall page structure
+│ │ └── Layout.tsx 
 │ └── posts/
-│ ├── PostDetail.tsx # Renders detailed view of a post with comments
-│ └── PostList.tsx # Displays the list of posts
-├── coverage/ # Folder for test coverage reports
+│ ├── PostDetail.tsx 
+│ └── PostList.tsx
+├── coverage/ 
 ├── pages/
-│ ├── fonts/ # Font assets for the project
+│ ├── fonts/ 
 │ ├── posts/
-│ │ └── [postId].tsx # Dynamic route page for post details
-│ ├── \_app.tsx # Global Next.js App component
-│ ├── \_document.tsx # Custom Document for SSR
-│ └── index.tsx # Main homepage displaying post list
-├── public/ # Static assets such as images and other public files
+│ │ └── [postId].tsx 
+│ ├── \_app.tsx 
+│ ├── \_document.tsx 
+│ └── index.tsx 
+├── public/ 
 ├── services/
-│ └── postApi.ts # API functions for fetching posts and comments
+│ └── postApi.ts 
 ├── styledComponents/
-│ ├── CommentStyles.ts # Styled components for comments
-│ ├── Headings.ts # Styled components for headings
-│ ├── LayoutStyles.ts # Styled components for Layout
-│ ├── mixins.ts # Common mixins for styled components
-│ ├── PostDetailStyles.ts # Styled components for PostDetail
-│ └── PostListStyles.ts # Styled components for PostList
+│ ├── CommentStyles.ts
+│ ├── Headings.ts 
+│ ├── LayoutStyles.ts 
+│ ├── mixins.ts
+│ ├── PostDetailStyles.ts
+│ └── PostListStyles.ts 
 ├── styles/
-│ ├── globals.css # Global styles for the entire application
+│ ├── globals.css 
 ├── tests/
-│ ├── PostDetail.test.tsx # Unit tests for PostDetail component
-│ └── PostList.test.tsx # Unit tests for PostList component
+│ ├── PostDetail.test.tsx 
+│ └── PostList.test.tsx
 ├── themes/
-│ └── theme.ts # Theme configuration for the project
+│ └── theme.ts 
 ├── types/
-│ ├── comments.ts # Type definitions for comments
-│ └── post.ts # Type definitions for posts
-├── .env.local # Environment variables for the project
-├── .eslintrc.json # ESLint configuration
-├── jest.config.js # Jest configuration for running tests
-├── setupTests.ts # Setup file for testing environment
-├── tsconfig.json # TypeScript configuration
-└── README.md # Project documentation
+│ ├── comments.ts 
+│ └── post.ts 
+├── .env.local 
+├── .eslintrc.json
+├── jest.config.js
+├── setupTests.ts
+├── tsconfig.json 
+└── README.md 
