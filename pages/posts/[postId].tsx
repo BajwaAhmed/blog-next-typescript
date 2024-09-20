@@ -21,6 +21,7 @@ const PostDetailPage = ({
   );
 };
 
+// As posts comments change often so we have to show the most recent data so we use getServerSideProps
 export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const postId = params?.postId;
   // Fetch all posts
