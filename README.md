@@ -29,46 +29,45 @@ npm run test
 
 ## Project Structure
 
-.
-├── components/
-│ ├── comments/
-│ │ └── Comment.tsx 
-│ ├── layout/
-│ │ └── Layout.tsx 
-│ └── posts/
-│ ├── PostDetail.tsx 
-│ └── PostList.tsx
-├── coverage/ 
-├── pages/
-│ ├── fonts/ 
-│ ├── posts/
-│ │ └── [postId].tsx 
-│ ├── \_app.tsx 
-│ ├── \_document.tsx 
-│ └── index.tsx 
-├── public/ 
-├── services/
-│ └── postApi.ts 
-├── styledComponents/
-│ ├── CommentStyles.ts
-│ ├── Headings.ts 
-│ ├── LayoutStyles.ts 
-│ ├── mixins.ts
-│ ├── PostDetailStyles.ts
-│ └── PostListStyles.ts 
-├── styles/
-│ ├── globals.css 
-├── tests/
-│ ├── PostDetail.test.tsx 
-│ └── PostList.test.tsx
-├── themes/
-│ └── theme.ts 
-├── types/
-│ ├── comments.ts 
-│ └── post.ts 
-├── .env.local 
-├── .eslintrc.json
-├── jest.config.js
-├── setupTests.ts
-├── tsconfig.json 
-└── README.md 
+├── components/              # Reusable UI components
+│   ├── comments/            # Components related to comments
+│   │   └── Comment.tsx      # Comment component
+│   ├── layout/              # Layout-related components
+│   │   └── Layout.tsx       # Layout component
+│   └── posts/               # Post-related components
+│       ├── PostDetail.tsx   # Post detail component
+│       └── PostList.tsx     # Post list component
+├── coverage/                # Code coverage reports
+├── pages/                   # Next.js pages
+│   ├── fonts/               # Custom fonts
+│   ├── posts/               # Dynamic post pages
+│   │   └── [postId].tsx     # Page for individual posts
+│   ├── _app.tsx             # Custom App component
+│   ├── _document.tsx        # Custom Document component
+│   └── index.tsx            # Home page
+├── public/                  # Public assets (images, fonts, etc.)
+├── services/                # API service functions
+│   └── postApi.ts           # API calls related to posts
+├── styledComponents/        # Styled components for custom styling
+│   ├── CommentStyles.ts     # Styling for Comment component
+│   ├── Headings.ts          # Styling for headings
+│   ├── LayoutStyles.ts      # Styling for Layout component
+│   ├── mixins.ts            # Common mixins for styled-components
+│   ├── PostDetailStyles.ts  # Styling for PostDetail component
+│   └── PostListStyles.ts    # Styling for PostList component
+├── styles/                  # Global CSS and other styles
+│   ├── globals.css          # Global CSS file
+├── tests/                   # Unit and integration tests
+│   ├── PostDetail.test.tsx  # Tests for PostDetail component
+│   └── PostList.test.tsx    # Tests for PostList component
+├── themes/                  # Theming for the project
+│   └── theme.ts             # Theme configuration
+├── types/                   # TypeScript type definitions
+│   ├── comments.ts          # Types for comments
+│   └── post.ts              # Types for posts
+├── .env.local               # Environment variables
+├── .eslintrc.json           # ESLint configuration
+├── jest.config.js           # Jest configuration
+├── setupTests.ts            # Setup file for Jest tests
+├── tsconfig.json            # TypeScript configuration
+└── README.md                # Project documentation
